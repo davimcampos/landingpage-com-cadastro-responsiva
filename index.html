@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site clínica</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="cabecalho">
+            <div class="logo">
+
+                <a href="index.html">
+                    <h3>Clínica Veterinária</h3>
+                </a>
+
+            </div>
+
+            <ul class="menu-cabecalho">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Login</a></li>
+                <li><a href="">Sobre</a></li>
+            </ul>
+
+            <button onclick="mostrarMenu()" id="sandwich">&#9776;</button>
+
+        </nav>
+
+    </header>
+
+    <div class="menu-responsivo">
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Login</a></li>
+            <li><a href="">Sobre</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <section>
+
+            <h1 id="titulo1">Faça Login</h1>
+            <h1 id='titulo2'>E agende uma consulta</h1>
+
+            <form class="formulario">
+
+                <h3 id="submitError"></h3>
+                <label for="nome" id="Lnome" class="label">nome</label>
+                <input type="text" name="nome" class="input" id="nome">
+                <label for="usuario" id="Lusuario" class="label">usuário</label>
+                <input type="text" name="usuario" class="input" id="usuario">
+                <label for="senha" id="Lsenha" class="label">senha</label>
+                <input type="password" name="senha" class="input" id="senha">
+                <button type="button" class="btn">CADASTRAR</button>
+
+
+            </form>
+
+            <div class="github">
+                <a href="https://www.github.com/davimcampos"><img src="images/github.png" alt=""></a>
+                <a href="https://www.github.com/davimcampos">davimcampos</a>
+            </div>
+
+        </section>
+        <aside>
+
+            <div id="circulo"></div>
+
+            <div id="cachorro"><img src="images/cachorro.png" alt="cachorro" class="cachorro"></div>
+
+        </aside>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
